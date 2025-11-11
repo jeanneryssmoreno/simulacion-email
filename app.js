@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const validarImputs = (e) => {
         console.log(e.target.value)
     }
+
     //asignar eventos
 
     inputEmail.addEventListener('blur', validarImputs);
@@ -19,7 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mensaje.addEventListener('blur', validarImputs);
 
+    // const validarImputs = (e) => {
+    //     console.log(e.target.value)
+    // }
 
-
+    // function validarImputs(e) {
+    //     console.log(e.target.value)
+    // }
 
 })
