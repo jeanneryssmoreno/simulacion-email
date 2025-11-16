@@ -8,24 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const mensaje = document.querySelector('#mensaje');
 
     const validarImputs = (e) => {
-        console.log(e.target.value)
+
+        if (e.target.value.trim() === '') {
+            console.log('esta vacio mama');
+
+        } else {
+            console.log('si hay');
+        }
     }
 
     //asignar eventos
 
     inputEmail.addEventListener('blur', validarImputs);
-
-
     asunto.addEventListener('blur', validarImputs);
-
     mensaje.addEventListener('blur', validarImputs);
-
-    // const validarImputs = (e) => {
-    //     console.log(e.target.value)
-    // }
-
-    // function validarImputs(e) {
-    //     console.log(e.target.value)
-    // }
 
 })
